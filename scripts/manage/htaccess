@@ -1,0 +1,8 @@
+AuthType Basic
+AuthDBMGroupFile /nfs/rcs/www/support/dbmauth/dbmauth
+AuthDBMUserFile /nfs/rcs/www/support/dbmauth/dbmauth
+AuthName "The UCL Intranet"
+
+require valid-user
+
+DirectoryIndex index.php
