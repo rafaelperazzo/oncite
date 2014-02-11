@@ -498,7 +498,8 @@ function specialcharslink($formname, $fieldname)
   <a href="<?php 
   // The URL MUST have the site removed so that window-to-window referral works even in HTTPS mode
   $reladdr = preg_replace('|^https?://.*?(?=/)|', '', $config['scriptshomeurl']);
-  echo $reladdr; ?>special-characters.htm" style="font-size: small; font-style: italic;" onclick="<?php echo $windowname ?>=window.open('<?php echo $reladdr; ?>charpal.php?formname=<?php echo htmlspecialchars($formname); ?>&fieldname=<?php echo htmlspecialchars($fieldname); ?>&content='+document.getElementById('<?php echo htmlspecialchars($fieldname); ?>').value,'<?php echo $windowname ?>',config='height=400,width=600,top=300,left=100,resizable=yes,toolbar=no,status=no,location=no,menubar=no,scrollbars=yes,directories=no'); if(window.focus) {<?php echo $windowname ?>.focus();} return false;" title="Special characters"><img src="<?php echo $config['scriptshomeurl'] ?>chars.gif" alt="Special characters" border="0" align="absmiddle" /></a>
+  echo $reladdr; ?>special-characters.htm" style="font-size: small; font-style: italic;" onclick="<?php echo $windowname ?>=window.open('<?php echo $reladdr; ?>charpal.php?formname=<?php echo htmlspecialchars($formname); ?>&fieldname=<?php echo htmlspecialchars($fieldname); ?>&content='+document.getElementById('<?php echo htmlspecialchars($fieldname); ?>').value,'<?php echo $windowname ?>',config='height=400,width=600,top=300,left=100,resizable=yes,toolbar=no,status=no,location=no,menubar=no,scrollbars=yes,directories=no'); if(window.focus) {<?php echo $windowname ?>.focus();} return false;" title="Special characters"><img src="../chars.gif" alt="Special characters" border="0" align="absmiddle" /></a>
+
   <?php
 }
 

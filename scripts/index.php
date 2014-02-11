@@ -3,7 +3,7 @@
 require_once('manage/config.inc.php');
 require_once('query/displayqueryterms.inc.php');
 //RAFAEL - Inclui a proxima linha
-//require_once(dirname(dirname(__FILE__)) . 'manage/common.php');
+//require_once('manage/common.php');
 $displayterms = displayqueryterms($_REQUEST);
 //RAFAEL - Iniciei a sessao
 session_start();
@@ -41,10 +41,10 @@ li {margin-bottom: 10px;}
 		print("<li><a href=\"personal/\">Log in</a></li>");
   ?>
   <!-- <li><a href="personal/">Log in</a></li> -->
-  <li><a href="manage/">Manage</a></li>
-  <li><a href="manage/superadmin/">Super Admin</a></li>
+  <!-- <li><a href="manage/">Manage</a></li> --:
+  <!-- <li><a href="manage/superadmin/">Super Admin</a></li> -->
   <li><a href="people/listallusers.php">List all users</a></li>
-  <li><a href="about.php">About</a></li>
+  <!-- <li><a href="about.php">About</a></li> -->
 
 </ul>
 <p style="font-size:14px">Based on UCL <a href="http://myopia.sourceforge.net"/>OnCite </a></p>

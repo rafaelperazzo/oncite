@@ -24,9 +24,9 @@ if(!(strlen($userid)>0) && authorisedForPubs($_SERVER['REMOTE_USER']) && ($_REQU
 {
   // SINCE THE USER IS AUTHORISED FOR MANAGEMENT, WE'RE GOING TO REDIRECT THEM TO THE MANAGEMENT PAGE
   ?>
-  <script type="text/javascript">
-  if(confirm("                      - - PUBLICATIONS SYSTEM - -   \n\nSince you're a registered administrator for the publications system, \nwould you like you jump straight to the 'Management' page \ninstead of your 'Personal' page?")) location.href='<?php echo $config['pageshomeurl'] ?>manage/';
-  </script>
+  <!--<script type="text/javascript"> -->
+  <!-- if(confirm("                      - - PUBLICATIONS SYSTEM - -   \n\nSince you're a registered administrator for the publications system, \nwould you like you jump straight to the 'Management' page \ninstead of your 'Personal' page?")) location.href='<?php echo $config['pageshomeurl'] ?>manage/'; -->
+  <!-- </script> -->
   <p style="margin: 20px 150px; padding: 5px; border: 1px solid rgb(204,102,0);"><strong>N.B!</strong> This is your personal 
   publications page.<br />For <strong>departmental publications management</strong> options available for 
   <em><?php echo $_SERVER['REMOTE_USER'] ?></em>, 

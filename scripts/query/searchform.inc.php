@@ -91,12 +91,12 @@ if($config['downformaintenance'])
     { //print("HAHAHA");
       ?>
 		<th>Department</th>
-		<td rowspan="5" style="border-left: 1px dotted gray;"><img src="/images/spacer.gif" width="1" height="1" alt="" /></td>
+		<td rowspan="5" style="border-left: 1px dotted gray;"><img src="../stararrow.gif" width="1" height="1" alt="" /></td>
     <?php
     } // End of "is-there-more-than-one-dept?"
     ?>
   <th>Year</th>
-  <td rowspan="4" style="border-left: 1px dotted gray;"><img src="/images/spacer.gif" width="1" height="1" alt="" /></td>
+  <td rowspan="4" style="border-left: 1px dotted gray;"><img src="../stararrow.gif" width="1" height="1" alt="" /></td>
     <th>Advanced preferences</th>
   </tr>
   <tr align="left" valign="top">
